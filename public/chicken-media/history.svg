@@ -1,0 +1,16 @@
+<svg id="Group_4720" data-name="Group 4720" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" stroke="none" fill="none">
+  <g id="Ellipse_818" data-name="Ellipse 818" fill="none" stroke="currentColor" stroke-width="2.2">
+    <circle cx="13" cy="13" r="13" stroke="none"/>
+    <circle cx="13" cy="13" r="11.9" fill="none"/>
+  </g>
+  <g id="Playlist_-_Repeat_List" data-name="Playlist -  Repeat List" transform="translate(7.216 7.577)">
+    <g id="Group_4330" data-name="Group 4330" transform="translate(0 6.494)">
+      <path id="Path_10407" data-name="Path 10407" d="M4.443,17.886,3,16.443m0,0L4.443,15M3,16.443h8.647" transform="translate(-3 -13.557)" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/>
+      <path id="Path_10409" data-name="Path 10409" d="M19.886,13A2.886,2.886,0,0,1,17,15.886" transform="translate(-8.341 -13)" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"/>
+    </g>
+    <g id="Group_4331" data-name="Group 4331" transform="translate(11.545 4.329) rotate(180)">
+      <path id="Path_10407-2" data-name="Path 10407" d="M1.443,2.886,0,1.443m0,0L1.443,0M0,1.443H8.647" transform="translate(0 1.443)" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/>
+      <path id="Path_10409-2" data-name="Path 10409" d="M2.886,0A2.886,2.886,0,0,1,0,2.886" transform="translate(8.659 0)" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"/>
+    </g>
+  </g>
+</svg>
