@@ -6,7 +6,7 @@ export interface DrawerState{
 }
 
 const initialState: DrawerState={
-    open:true,
+    open:false,
     selectedItem: 0
 }
 

@@ -1,5 +1,5 @@
 import {Route, Routes} from "react-router-dom";
-import { LoginPrimary } from "./login/component/LoginPrimary";
+import { LoginMain } from "./login/component/LoginMain";
 import {Login} from "./login/Login";
 
 export const AuthPage = () => {
@@ -7,8 +7,8 @@ export const AuthPage = () => {
     return (
         <Routes>
             <Route element={<Login/>}>
-                <Route path={'login'} element={<LoginPrimary/>}></Route>
-                <Route index element={<LoginPrimary/>}/>
+                <Route path={'login'} element={<LoginMain/>}></Route>
+                <Route index element={<LoginMain/>}/>
             </Route>
         </Routes>
     );

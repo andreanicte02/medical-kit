@@ -19,7 +19,6 @@ export default function MainLayout() {
                 breakPointMobile && <DrawerMobile/>
             }
             <Content>
-
                 <Outlet/>
             </Content>
         </Box>

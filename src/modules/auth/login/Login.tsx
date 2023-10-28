@@ -12,7 +12,7 @@ export const Login = () => {
     return (
 
 
-        <FlexCenterContainer>
+        <FlexCenterContainer sx={{backgroundColor:"red",  backgroundImage: "url(\"/background-login.png\")",}}>
             <Paper>
                 <Container component="main" maxWidth="xs" sx={{paddingBottom:"2rem", paddingTop:"2rem"}}>
                     <Outlet></Outlet>
