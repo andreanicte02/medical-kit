@@ -8,7 +8,7 @@ export const PrivateRoute = () => {
         <Routes>
             <Route element={<MainLayout/>}>
 
-                <Route path="auth/*" element={<Navigate to="/search/list"/>}/>
+                <Route path="auth/*" element={<Navigate to="/search/history"/>}/>
 
                 <Route
                     path="search/*"

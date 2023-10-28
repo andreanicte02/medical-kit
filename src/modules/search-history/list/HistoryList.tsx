@@ -4,6 +4,7 @@ import {
     AccordionDetails,
     AccordionSummary,
     Box,
+    Button,
     Card,
     Grid,
     InputAdornment, Link,
@@ -13,13 +14,17 @@ import {
 } from "@mui/material";
 import {DatePicker} from "@mui/x-date-pickers/DatePicker/DatePicker";
 import SearchIcon from "@mui/icons-material/Search";
-import {EyePassword} from "../../../_chicken/components/EyePassword";
-import IconButton from "@mui/material/IconButton";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import {dataPickersStyle, layoutStyle, searchBarStyle} from "../../../style/HistoryListStyle";
+import {useNavigate} from "react-router-dom";
 
 export const HistoryList = () => {
 
+
+    const navigate = useNavigate();
+    const action = ()=>{
+        navigate(`/search/detail/random`);
+    }
 
     return (
         <div>
@@ -72,7 +77,7 @@ export const HistoryList = () => {
 
                                 <div>
                                     Fecha:
-                                    <Link sx={{marginLeft: "5px"}}>
+                                    <Link  onClick={action} component={Button} sx={{marginLeft: "5px"}} >
                                         20/10/2023
                                     </Link>
                                 </div>
@@ -88,7 +93,7 @@ export const HistoryList = () => {
 
                                 <div>
                                     Fecha:
-                                    <Link sx={{marginLeft: "5px"}}>
+                                    <Link  onClick={action} component={Button} sx={{marginLeft: "5px"}} >
                                         20/10/2023
                                     </Link>
                                 </div>
@@ -122,7 +127,7 @@ export const HistoryList = () => {
 
                                 <div>
                                     Fecha:
-                                    <Link sx={{marginLeft: "5px"}}>
+                                    <Link  onClick={action} component={Button} sx={{marginLeft: "5px"}} >
                                         20/10/2023
                                     </Link>
                                 </div>
@@ -138,7 +143,7 @@ export const HistoryList = () => {
 
                                 <div>
                                     Fecha:
-                                    <Link sx={{marginLeft: "5px"}}>
+                                    <Link  onClick={action} component={Button} sx={{marginLeft: "5px"}} >
                                         20/10/2023
                                     </Link>
                                 </div>
