@@ -5,7 +5,8 @@ import {
     AccordionSummary,
     Box,
     Card,
-    InputAdornment,
+    Grid,
+    InputAdornment, Link,
     Paper,
     TextField,
     Typography
@@ -14,8 +15,8 @@ import {DatePicker} from "@mui/x-date-pickers/DatePicker/DatePicker";
 import SearchIcon from "@mui/icons-material/Search";
 import {EyePassword} from "../../../_chicken/components/EyePassword";
 import IconButton from "@mui/material/IconButton";
-import {Visibility, VisibilityOff} from "@mui/icons-material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import {dataPickersStyle, layoutStyle, searchBarStyle} from "../../../style/HistoryListStyle";
 
 export const HistoryList = () => {
 
@@ -23,27 +24,29 @@ export const HistoryList = () => {
     return (
         <div>
 
-            <div>
-                <TextField fullWidth
-                           InputProps={{
-                               endAdornment:
-                                   <InputAdornment position={"start"}>
-                                       <SearchIcon/>
-                                   </InputAdornment>
-                           }}
-                           label={"Busqueda"}
+            <Box sx={layoutStyle}>
+                <Box sx={searchBarStyle}>
+                    <TextField fullWidth
+                               InputProps={{
+                                   endAdornment:
+                                       <InputAdornment position={"start"}>
+                                           <SearchIcon/>
+                                       </InputAdornment>
+                               }}
+                               label={"Busqueda"}
 
-                >
+                    >
 
-                </TextField>
-            </div>
+                    </TextField>
+                </Box>
 
-            <div style={{marginTop: "15px", display: "flex"}}>
+                <Box sx={dataPickersStyle}>
 
-                <DatePicker label={"Fecha inicio"} sx={{marginRight: "5px"}}/>
+                    <DatePicker label={"Fecha inicio"} sx={{marginRight: "5px"}}/>
 
-                <DatePicker label={"Fecha fin"} sx={{marginLeft: "5px"}}></DatePicker>
-            </div>
+                    <DatePicker label={"Fecha fin"} sx={{marginLeft: "5px"}}></DatePicker>
+                </Box>
+            </Box>
 
             <Paper style={{marginTop: "15px"}}>
 
@@ -58,30 +61,41 @@ export const HistoryList = () => {
                         <Typography>Name 1</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <div style={{marginLeft: "10px"}}>
-                            <div>
-                                Dpi: 1234123123123
-                            </div>
-                            <div style={{marginTop: "10px"}}>
-                                Asunto: Dolor de estomago por tal y tal cosa
-                            </div>
+                        <Grid container>
 
+                            <Grid item xs={6}>
+                                <div style={{marginLeft: "10px"}}>
+                                    Asunto: Dolor de estomago por tal y tal cosa
+                                </div>
+                            </Grid>
+                            <Grid item xs={6}>
 
-                            <div style={{marginTop: "10px"}}>
-                                Resumen: El paciente inicio con dolor de de estomago y procisigo a tener los siguientes sintomas
-                            </div>
+                                <div>
+                                    Fecha:
+                                    <Link sx={{marginLeft: "5px"}}>
+                                        20/10/2023
+                                    </Link>
+                                </div>
 
+                            </Grid>
 
-                            <div style={{marginTop: "10px"}}>
-                                Tratamiento: Paracetamol 5mg
-                            </div>
+                            <Grid item xs={6} marginTop={2}>
+                                <div style={{marginLeft: "10px"}}>
+                                    Asunto: Dolor de cabeza y tal cosa
+                                </div>
+                            </Grid>
+                            <Grid item xs={6} marginTop={2}>
 
-                            <div style={{marginTop: "10px"}}>
-                                Fecha: 20/10/2023
-                            </div>
+                                <div>
+                                    Fecha:
+                                    <Link sx={{marginLeft: "5px"}}>
+                                        20/10/2023
+                                    </Link>
+                                </div>
 
+                            </Grid>
 
-                        </div>
+                        </Grid>
                     </AccordionDetails>
                 </Accordion>
 
@@ -97,30 +111,41 @@ export const HistoryList = () => {
                         <Typography>Name 2</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <div style={{marginLeft: "10px"}}>
-                            <div>
-                                Dpi: 1234123123123
-                            </div>
-                            <div style={{marginTop: "10px"}}>
-                                Asunto: Dolor de estomago por tal y tal cosa
-                            </div>
+                        <Grid container>
 
+                            <Grid item xs={6}>
+                                <div style={{marginLeft: "10px"}}>
+                                    Asunto: Dolor de estomago por tal y tal cosa
+                                </div>
+                            </Grid>
+                            <Grid item xs={6}>
 
-                            <div style={{marginTop: "10px"}}>
-                                Resumen: El paciente inicio con dolor de de estomago y procisigo a tener los siguientes sintomas
-                            </div>
+                                <div>
+                                    Fecha:
+                                    <Link sx={{marginLeft: "5px"}}>
+                                        20/10/2023
+                                    </Link>
+                                </div>
 
+                            </Grid>
 
-                            <div style={{marginTop: "10px"}}>
-                                Tratamiento: Paracetamol 5mg
-                            </div>
+                            <Grid item xs={6} marginTop={2}>
+                                <div style={{marginLeft: "10px"}}>
+                                    Asunto: Dolor de cabeza y tal cosa
+                                </div>
+                            </Grid>
+                            <Grid item xs={6} marginTop={2}>
 
-                            <div style={{marginTop: "10px"}}>
-                                Fecha: 20/10/2023
-                            </div>
+                                <div>
+                                    Fecha:
+                                    <Link sx={{marginLeft: "5px"}}>
+                                        20/10/2023
+                                    </Link>
+                                </div>
 
+                            </Grid>
 
-                        </div>
+                        </Grid>
                     </AccordionDetails>
                 </Accordion>
 
